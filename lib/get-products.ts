@@ -1,0 +1,7 @@
+export const getProducts = async (ms = 1500) => {
+	await new Promise((resolve) => setTimeout(resolve, ms));
+	return fetch(
+		`https://cdn.contentful.com/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master/entries?access_token=${process.env.CONTENTFUL_DELIVERY_TOKEN}&content_type=ecommerceProduct`,
+		{ next: { revalidate: 60 } }
+	).then((res) => res.json());
+};

@@ -1,4 +1,5 @@
 import { FilterPill } from '@/components/filter-pill';
+import ProductList from '@/components/products/list';
 
 interface Props {
 	searchParams: {
@@ -33,7 +34,7 @@ export default function Home({ searchParams }: Props) {
 			</div>
 			<h2 className='text-2xl font-bold'>Headphones For You!</h2>
 			<div className='grid grid-cols-2 gap-8 pb-6 md:grid-cols-4'>
-				{/* <ProductList timeout={Number(searchParams.timeout) || undefined} /> */}
+				<ProductList timeout={Number(searchParams.timeout) || undefined} />
 			</div>
 		</>
 	);
