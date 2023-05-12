@@ -12,7 +12,7 @@ export const EcommerceHeader = () => {
 					</span>
 				</li>
 				<li className='hidden font-medium text-typography-primary md:block md:px-6'>Deals</li>
-				<li className='hidden font-medium text-typography-primary md:block md:px-6'>What's New</li>
+				<li className='hidden font-medium text-typography-primary md:block md:px-6'>What&apos;s New</li>
 				<li className='font-medium text-typography-primary md:px-6'>Delivery</li>
 			</ul>
 			<div className='flex items-center gap-4'>
